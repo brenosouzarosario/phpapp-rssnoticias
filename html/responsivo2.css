@@ -1,0 +1,164 @@
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Regular.ttf);
+}
+
+
+html,body {
+    height: 100%;    
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    overflow: hidden !important;
+    font-family: Roboto;
+   }
+
+   .row {
+    display: -webkit-inline-box;
+   }
+
+    .fundo {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   }
+
+   .header-bar {
+    width: 100%;
+    height:17%;
+    display: flex;
+    align-items: flex-end;
+   }
+
+   .header-item-left {
+    width: 33vw;
+    background-image: url(forma-2.png);
+    position: relative;
+    z-index: 1;
+	text-align: center;
+   }
+
+   .logo {
+    width: auto;
+    height: 6vw;
+   }
+
+   .header-item-center {
+    width: 67vw;
+    margin-left: -6vw;
+    border-bottom: 6.5vw solid #dcdcdc;
+    border-right: 3vw solid transparent;
+    height: 0;
+   }
+
+   .titulo {
+    font-size: 30px;
+    font-size: 2.4vw;
+    padding-top: 6%;
+    padding-top: 2vw;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-left: 6%;
+   }
+
+   .header-item-left, .header-item-center, .header-item-right {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+   }
+
+  .noticia {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 2vw 3vw;    
+  }   
+
+  .descricao {
+    font-size: 2vw;
+    /* overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; */
+  }
+
+  .pt-3 {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+
+  .ml-3 {
+    margin-left: 6%;
+    margin-left: 2vw;
+  }
+
+  
+
+ @media only screen and (orientation: portrait) {
+    .fundo {
+    width: 100%;
+    height: 100%;    
+    /* background: url(bg-3.jpg); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    }
+
+    .row {
+    width: 100%;
+    display: block;
+   }
+
+    .header-bar {
+    width: 100%;
+    height: auto;
+   }
+
+   .header-item-left {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    background-image: none;
+    background-color: rgb(106, 116, 122);
+   }
+
+   .header-item-center {
+    width: 100%;
+    background: gainsboro;
+    border: none;
+    padding: 0;
+    height: auto;
+    text-align: center;
+    margin: 0;
+   }
+ 
+
+   .titulo {
+    font-size: 30px;
+    font-size: 4vw;
+    padding: 2vw;
+  }
+
+  .noticia {
+    padding: 4vw 4vw;
+}
+
+  .descricao {
+    font-size: 5vw;
+    /* overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical; */
+}
+  
+
+  .logo {
+    width: auto;
+    height: 14vw;
+  }
+}
